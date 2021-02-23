@@ -25,7 +25,7 @@ Given Z_score and Sigma, the Multi_Analysis function provids the P-values of the
 ```
 library(omniTest)  # load the onmiTest package
 
-# Z_score shold be a matrix of test statistics for each factor in the set (i.e. marginal test statistic for each trait).
+# Z_score shold be a vector of test statistics for each factor in the set (i.e. marginal test statistic for each trait).
 
 # Sigma shpuld be a matrix of the correlations between all the test statistics in the set.
 
@@ -39,9 +39,6 @@ Z_score<- rmvnorm(1,mean=c(2,2,2),sigma=Sigma)
 
 Multi_Analysis(Z_score,Sigma) 
 
- Z_score
-            [,1]        [,2]        [,3]
-[1,] -0.08072734 -0.08072731 -0.08072731
 
 -----------The p_values of GHC, GBJ, MinP and OMNI tests-----------
 
