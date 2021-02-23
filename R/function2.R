@@ -1,4 +1,4 @@
-#' @title Calculate the P-values of the Generalized Berk-Jones (GBJ) test, the generalized higher criticism (GHC) test, the the MinimumP second-level (MinP) test and the omnibus (OMNI) test.
+r#' @title Calculate the P-values of the Generalized Berk-Jones (GBJ) test, the generalized higher criticism (GHC) test, the the MinimumP second-level (MinP) test and the omnibus (OMNI) test.
 #' @param Z_score Vector of test statistics for each factor in the set (i.e. marginal test statistic for each trait).
 #' @param Sigma d*d matrix of the correlations between all the test statistics in the set, where d is the total number of test statistics in the set. You only need to specify EITHER cor_mat OR pairwise_cors.
 #' @return The p-values of the GBJ, GHC, MinP and OMNI tests, given the size of the set
@@ -21,7 +21,7 @@ Multi_Analysis<-function(Z_score,Sigma){
 
   OMNI_p<-CCT(c(GHC_p,GBJ_p,minP_p))
 
-  out <- as.data.frame(matrix(c(GHC_p,GBJ_p,minP_p,OMNI_p),1,4))
+  out <- c(GHC_p,GBJ_p,minP_p,OMNI_p)
 
   names(out)<-c("GHC_p","GBJ_p","MinP_p","OMNI_p")
 
