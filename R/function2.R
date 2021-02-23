@@ -21,5 +21,5 @@ Multi_Analysis<-function(Z_score,Sigma){
 
   OMNI_p<-CCT(c(GHC_p,GBJ_p,minP_p))
 
-  return(GHC_p,GBJ_p,minP_p,OMNI_p)
+  return(c(GHC_p,GBJ_p,minP_p,OMNI_p))
 }
