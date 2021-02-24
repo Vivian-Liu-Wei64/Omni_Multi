@@ -48,5 +48,5 @@ Multi_Analysis(Z_score,Sigma)
 ```
 
 ## Reference
-Liu, W., Guo, Y. and Liu, Z.#,  2021. An Omnibus Test for Detecting Multiple Phenotype Associations based on GWAS Summary Level Data. (under review)
+Liu, W., Guo, Y. and Liu, Z.#,  2021. An Omnibus Test for Detecting Multiple Phenotype Associations based on GWAS Summary Level Data. (in press)
 
