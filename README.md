@@ -7,11 +7,11 @@ Please use the following command in R to install the package:
 ```
 install.packages("devtools") 
 library(devtools)
-install_github("Vivian-Liu-Wei64/Onmi_Multi")
+install_github("Vivian-Liu-Wei64/Omni_Multi")
 ```
 ## Usage
 
-The onmiTest performs the multiple traits association test based on GWAS summary statistics.
+The omniTest performs the multiple traits association test based on GWAS summary statistics.
 
 The Multi_Analysis function is used to calculate the P_values of GHC, GBJ, MinP and OMNI tests. 
 
@@ -23,7 +23,7 @@ Given Z_score and Sigma, the Multi_Analysis function provids the P-values of the
 
 ## Example 
 ```
-library(omniTest)  # load the onmiTest package
+library(omniTest)  # load the omniTest package
 
 # Z_score shold be a vector of test statistics for each factor in the set (i.e. marginal test statistic for each trait).
 
